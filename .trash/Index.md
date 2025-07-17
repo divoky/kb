@@ -5,7 +5,7 @@ longform:
   workflow: Default Workflow
   sceneFolder: /
   scenes:
-    - Linux
+    - Docker
   sceneTemplate: templates/article.md
   ignoredFiles: []
 ---
