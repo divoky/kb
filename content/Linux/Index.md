@@ -9,6 +9,10 @@ longform:
     - Git
   sceneTemplate: templates/article.md
   ignoredFiles: []
+tags:
+  - linux
+  - fedora
+  - KDE Plasma
 ---
 ## Fedora
 ### Nastavení
