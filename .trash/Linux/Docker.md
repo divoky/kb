@@ -2,10 +2,6 @@
 title: Docker
 draft: false
 tags:
- - docker
- - linux
- - fedora
- - bash
 ---
 ## Instalace
 ```bash
