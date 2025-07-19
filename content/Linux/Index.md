@@ -19,6 +19,7 @@ tags:
 ### Nastavení
 #### Num lock
 Nastavení num lock po zapnutí [^1]
+
 `System Settings > Keyboard > Keyboard > Keyboard > Numlock on startup: Turn on`
 
 potom
