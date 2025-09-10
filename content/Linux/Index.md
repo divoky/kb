@@ -29,16 +29,26 @@ potom
 
 ### Servis
 #### Nastavení počtu záloh při updatu / upgradu
+
 Do `main` sekce v `/etc/dnf/dnf.conf` přidat `installonly_limit=13`
+
 potom `sudo dnf upgrade --refresh`
 #### Odstranení konkrétního kernelu
+
 aktuální kernel
+
 `uname -a`
+
 vypsání dostupných verzí
+
 `rpm -qa kernel`
+
 odstranění verze včetně všech závislostí
+
 `sudo dnf remove kernel*6.16.3*`
+
 potom `sudo dnf upgrade`
+
 restart (optional)
 
 [^1]: https://discussion.fedoraproject.org/t/why-isnt-numlock-at-plasma-startup-turned-on-by-default/96799/9
