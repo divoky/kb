@@ -24,3 +24,10 @@ upravit `OSH_THEME="font"` na `OSH_THEME="agnoster"`
 ```bash
 uninstall_oh_my_bash
 ```
+
+## Tipy triky
+
+* přenos souborů
+  ```bash
+  cd /path/to/source/files && tar -cf - . | ssh user@127.0.0.1 'cd /path/to/destination && tar -xvf -'
+    ```
