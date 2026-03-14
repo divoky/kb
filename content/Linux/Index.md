@@ -72,6 +72,14 @@ odstranění verze včetně všech závislostí: `sudo dnf remove kernel*6.16.3*
 potom `sudo dnf upgrade`
 restart (optional)
 
+#### Firmware update
+
+```bash
+fwupdmgr refresh --force
+fwupdmgr get-updates
+fwupdmgr update
+```
+
 [^1]: https://discussion.fedoraproject.org/t/why-isnt-numlock-at-plasma-startup-turned-on-by-default/96799/9
 
 [^2]: https://rpmfusion.org/Howto/Multimedia
