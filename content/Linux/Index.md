@@ -8,6 +8,7 @@ longform:
     - Bash
     - Docker
     - Git
+    - Proton Pass
   sceneTemplate: templates/article.md
   ignoredFiles: []
 tags:
