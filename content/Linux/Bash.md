@@ -5,6 +5,8 @@ tags:
  - linux
  - fedora
  - bash
+created: 2026-04-26 10:13:06
+modified: 2026-05-02 17:22:17
 ---
 ## oh-my-bash
 
@@ -50,6 +52,6 @@ echo 'source -- ~/.local/share/blesh/ble.sh' >> ~/.bashrc
 ## Tipy triky
 
 * přenos souborů
-  ```bash
+    ```bash
   cd /path/to/source/files && tar -cf - . | ssh user@127.0.0.1 'cd /path/to/destination && tar -xvf -'
     ```

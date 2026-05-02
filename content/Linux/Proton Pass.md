@@ -2,12 +2,14 @@
 title: Proton Pass
 draft: false
 tags:
+created: 2026-04-26 10:13:06
+modified: 2026-05-02 17:27:07
 ---
 
 ## Instalace
 
 ```bash
-url -fsLSo /tmp/proton-pass.rpm https://proton.me/download/PassDesktop/linux/x64/ProtonPass.rpm
+curl -fsLSo /tmp/proton-pass.rpm https://proton.me/download/PassDesktop/linux/x64/ProtonPass.rpm
 PP_CHECKSUM=`curl 'https://proton.me/download/PassDesktop/linux/x64/version.json' | jq -r '.Releases.[0].File.[1].Sha512CheckSum'`
 echo "$PP_CHECKSUM /tmp/proton-pass.rpm" | sha512sum --check -
 sudo rpm --install /tmp/proton-pass.rpm

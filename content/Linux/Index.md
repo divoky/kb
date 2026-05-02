@@ -16,6 +16,8 @@ tags:
   - fedora
   - KDE
   - Plasma
+created: 2026-05-02 17:29:33
+modified: 2026-05-02 17:30:55
 ---
 ## Fedora
 
@@ -57,6 +59,14 @@ další info pro konkrétní HW [^2]
 
 https://github.com/devangshekhawat/ [^3]
 
+#### Tesseract language pack
+
+```bash
+sudo dnf install tesseract-langpack-ces
+```
+
+credit [^4]
+
 ### Servis
 
 #### Nastavení počtu záloh při updatu / upgradu
@@ -86,3 +96,5 @@ fwupdmgr update
 [^2]: https://rpmfusion.org/Howto/Multimedia
 
 [^3]: https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
+
+[^4]: https://discussion.fedoraproject.org/t/install-all-languages-of-tesseract/112299/3
