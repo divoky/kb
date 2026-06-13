@@ -17,7 +17,7 @@ tags:
   - KDE
   - Plasma
 created: 2026-05-02 17:29:33
-modified: 2026-06-13 23:45:32
+modified: 2026-06-14 00:58:09
 ---
 ## Fedora
 
@@ -31,7 +31,7 @@ Nastavení num lock po zapnutí [^1]
 
 potom
 
-`System Settings > Apperance & Style > Colors & Themes > Global Theme > Login Screen (SDDM) > Apply Plasma Settings...`
+`System Settings > Security & Privacy > Login Screen > Apply Plasma Settings...`
 
 #### Kodeky
 
