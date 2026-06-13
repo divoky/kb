@@ -17,7 +17,7 @@ tags:
   - KDE
   - Plasma
 created: 2026-05-02 17:29:33
-modified: 2026-05-02 17:30:55
+modified: 2026-06-13 23:45:32
 ---
 ## Fedora
 
@@ -68,6 +68,27 @@ sudo dnf install tesseract-langpack-ces
 credit [^4]
 
 ### Servis
+
+#### Fix nechtěného probouzení PC s Logitech MX Keys S
+
+Vypsání USB zařízení `lsusb | grep -i bolt`
+
+`Bus 007 Device 008: ID 046d:c548 Logitech, Inc. Logi Bolt Receiver`
+
+ID == `<idVendor>:<idProduct>`
+
+do `/etc/udev/rules.d/50-wake-on-devices.rules` přidat:
+
+```
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="<idVendor>", ATTRS{idProduct}=="<idProduct>", ATTR{power/wakeup}="disabled"
+```
+
+Aplikace nastavení:
+
+```bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
 
 #### Nastavení počtu záloh při updatu / upgradu
 
