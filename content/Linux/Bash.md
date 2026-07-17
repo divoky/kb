@@ -6,7 +6,7 @@ tags:
  - fedora
  - bash
 created: 2026-04-26 10:13:06
-modified: 2026-05-02 17:22:17
+modified: 2026-07-17 17:41:34
 ---
 ## oh-my-bash
 
@@ -47,6 +47,20 @@ cd /var/src
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
 make -C ble.sh install PREFIX=~/.local
 echo 'source -- ~/.local/share/blesh/ble.sh' >> ~/.bashrc
+```
+
+## Historie
+
+Do `/etc/bashrc` přidat
+
+```bash
+ export HISTSIZE=10000  
+ export HISTFILESIZE=10000  
+ export HISTTIMEFORMAT="%y-%m-%d %T "  
+ # avoid duplicates..  
+ export HISTCONTROL=ignoredups:erasedups  
+ # append history entries..  
+ shopt -s histappend
 ```
 
 ## Tipy triky
