@@ -17,7 +17,7 @@ tags:
   - KDE
   - Plasma
 created: 2026-05-02 17:29:33
-modified: 2026-06-13 23:45:32
+modified: 2026-11-20 09:19:23
 ---
 ## Fedora
 
@@ -89,6 +89,10 @@ Aplikace nastavení:
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
+
+#### TTY neprudí s instalací SW
+
+V `/etc/PackageKit/CommandNotFound.conf` změnit `SoftwareSourceSearch` z `true` na `false`
 
 #### Nastavení počtu záloh při updatu / upgradu
 
